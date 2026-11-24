@@ -5,8 +5,14 @@ import {
     Package,
     Users,
     ArrowUpRight,
-    ArrowDownRight
+    ArrowDownRight,
+    Save,
+    Plus,
+    Trash2,
+    Pencil
 } from "lucide-react";
+
+import CommonButton from "../../components/buttons/CommonButton";
 
 const summaryCards = [
     {
@@ -83,6 +89,7 @@ function Dashboard() {
                 <h1 className="text-2xl font-bold text-slate-800">
                     Dashboard Overview
                 </h1>
+                <CommonButton label="Save" color="primary" size="medium" />
 
                 <p className="text-sm text-slate-500 mt-1">
                     Welcome back! Here is your store overview.
