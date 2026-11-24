@@ -12,7 +12,7 @@ const initialProducts = [
     { id: 2, productCode: "P002", productName: "Cooking Oil", salePrice: 180 },
 ];
 
-const columns = [
+const columnss = [
     {
         key: "productCode",
         label: "Product Code",
@@ -32,7 +32,7 @@ function DemoPage() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState(false);
-    //const [columns, setColumns] = useState(columns);
+    const [columns, setColumns] = useState(columnss);
     const [products, setProducts] = useState(initialProducts);
     const handleSubmmit = (e) => {
         e.preventDefault();
