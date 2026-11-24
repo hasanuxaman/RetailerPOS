@@ -4,6 +4,7 @@ import Header from "./components/layout/Header";
 import Dashboard from "./pages/dashboard/Dashboard";
 import DemoPage from "./pages/DemoPage/DemoPage";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Product from "./pages/products/Product";
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                             <Route path="/" element={<Navigate to="/dashboard" replace />} />
                             <Route path="/dashboard" element={<Dashboard />} />
                             <Route path="/demo" element={<DemoPage />} />
+                            <Route path="/products" element={<Product />} />
                             <Route path="*" element={<Dashboard />} />
                         </Routes>
                     </main>
